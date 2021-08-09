@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="mainContainer" prefHeight="587.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.MainViewController">
+   <left>
+      <VBox fx:id="Btns" prefHeight="587.0" prefWidth="178.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="menuBtnSettings" prefHeight="57.0" prefWidth="178.0" styleClass="btnMenu">
+               <children>
+                  <Label layoutX="21.0" layoutY="21.0" text="Ustawienia" />
+               </children>
+            </Pane>
+            <Pane fx:id="menuBtnPlayer" prefHeight="57.0" prefWidth="178.0" styleClass="btnMenu">
+               <children>
+                  <Label layoutX="21.0" layoutY="21.0" text="Panel Gracza" />
+               </children>
+            </Pane>
+            <Pane fx:id="menuBtnGM" prefHeight="57.0" prefWidth="178.0" styleClass="btnMenu">
+               <children>
+                  <Label layoutX="21.0" layoutY="21.0" text="Panel Mistrza Gry" />
+               </children>
+            </Pane>
+            <Pane fx:id="menuBtnWB" prefHeight="57.0" prefWidth="178.0" styleClass="btnMenu">
+               <children>
+                  <Label layoutX="21.0" layoutY="21.0" text="Panel Światotwórcy" />
+               </children>
+            </Pane>
+            <Pane fx:id="menuBtnAdmin" prefHeight="57.0" prefWidth="178.0" styleClass="btnMenu">
+               <children>
+                  <Label layoutX="21.0" layoutY="21.0" text="Panel Admina" />
+               </children>
+            </Pane>
+            <Pane fx:id="menuBtnLogout" prefHeight="57.0" prefWidth="178.0" styleClass="btnMenu">
+               <children>
+                  <Label layoutX="21.0" layoutY="21.0" text="Wyloguj" />
+               </children>      
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

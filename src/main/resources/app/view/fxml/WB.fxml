@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane prefHeight="587.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.WBController">
+   <center>
+      <HBox fx:id="mainPanel" styleClass="general-view">
+      <VBox fx:id="lists">
+            <VBox fx:id="racePanelWrapper" styleClass="content-view, packed-view">
+               <Label text="Rasy:"/>
+               <VBox fx:id="racePanel"/>
+               <Button fx:id="addRaceButton" text = "Dodaj rasę"/>
+            </VBox>
+            <VBox fx:id="worldPanelWrapper" styleClass="content-view, packed-view">
+               <Label text="Światy:"/>
+               <VBox fx:id="worldPanel"/>
+               <Button fx:id="addWorldButton" text = "Dodaj świat"/>
+            </VBox>
+         </VBox>
+         <VBox fx:id="workingPanel"/>
+      </HBox>
+   </center>
+</BorderPane>

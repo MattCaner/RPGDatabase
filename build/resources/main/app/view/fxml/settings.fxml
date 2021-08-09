@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane prefHeight="587.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.SettingsController">
+   <center>
+      <HBox fx:id="mainbox" styleClass="general-view">
+         <VBox fx:id="leftPanel">
+            <VBox fx:id="info">
+               <Label fx:id="user_id_label"/>
+               <Label fx:id="user_nick_label"/>
+               <Label fx:id="user_name_label"/>
+               <Label fx:id="user_group_label"/>
+               <Label fx:id="user_sessions_number_label"/>
+            </VBox>
+            <VBox fx:id="buttons" styleClass="buttons-view, packed-view">
+               <Button fx:id="changeNickButton" mnemonicParsing="false" alignment="CENTER" text="Zmień nick i imię"/>
+               <Button fx:id="changePasswordButton" mnemonicParsing="false" alignment="CENTER" text="Zmień hasło"/>
+            </VBox>
+         </VBox>
+         <VBox fx:id="centralPanel" styleClass="content-view">
+            <VBox fx:id="optionsPanel">
+
+            </VBox>
+            <Label fx:id="generalStatus"/>
+         </VBox>
+      </HBox>
+   </center>
+</BorderPane>

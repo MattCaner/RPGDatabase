@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+javafx {
+    modules = [ 'javafx.controls', 'javafx.fxml']
+}
+
+mainClassName = 'app.Main'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'commons-net', name: 'commons-net', version: '3.6'
+	compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
+}
+
+
+task fatJar(type: Jar) {
+	manifest {
+        attributes 'Implementation-Title': 'RPGDatabase',  
+        	'Implementation-Version': version,
+        	'Main-Class': 'app.Main'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+task generateDocs(type: Javadoc) {
+  source = sourceSets.main.allJava
+  destinationDir = reporting.file("docs")
+
+}

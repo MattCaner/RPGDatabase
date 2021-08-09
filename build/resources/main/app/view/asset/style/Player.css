@@ -1,0 +1,8 @@
+.general-view{
+    -fx-padding:10px;
+    -fx-margin:10px;
+    -fx-border:1px;
+}
+.root{
+    -fx-background-color: #00ff00;
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane prefHeight="587.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.PlayerController">
+   <center>
+      <Label text="Panel Gracza" BorderPane.alignment="CENTER" />
+      <HBox fx:id="mainPane" styleClass="general-view">
+         <VBox fx:id="heroListWrapper" styleClass="buttons-view">
+            <Label text="Lista twoich postaci:"/>
+            <VBox fx:id="heroList" styleClass="packed-view">
+            
+            </VBox>
+         </VBox>
+         <VBox fx:id="heroDescWrapper" styleClass="content-view">
+            <Label text="Wybrana postać:"/>
+
+            <VBox fx:id="heroDesc" >
+               <VBox fx:id="heroStats" styleClass="packed-view">
+                  <HBox fx:id="heroStats_name">
+                     <Label text="Imię:"/>
+                     <TextField fx:id="heroStats_nameInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_level">
+                     <Label text="Poziom:"/>
+                     <TextField fx:id="heroStats_levelInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_class">
+                     <Label text="Klasa:"/>
+                     <TextField fx:id="heroStats_classInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_char">
+                     <Label text="Charakter:"/>
+                     <TextField fx:id="heroStats_charInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_race">
+                     <Label text="Rasa:"/>
+                     <ComboBox fx:id="heroStats_raceInput"/>
+                  </HBox>
+                  
+                  <HBox fx:id="heroStats_ac">
+                     <Label text="Klasa Pancerza:"/>
+                     <TextField fx:id="heroStats_acInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_pwmax">
+                     <Label text="Maksymalne PW:"/>
+                     <TextField fx:id="heroStats_pwmaxInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_sia">
+                     <Label text="Siła:"/>
+                     <TextField fx:id="heroStats_siaInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_zrczno">
+                     <Label text="Zręczność:"/>
+                     <TextField fx:id="heroStats_zrcznoInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_mdro">
+                     <Label text="Mądrość:"/>
+                     <TextField fx:id="heroStats_mdroInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_inteligencja">
+                     <Label text="Inteligencja:"/>
+                     <TextField fx:id="heroStats_inteligencjaInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_charyzma">
+                     <Label text="Charyzma:"/>
+                     <TextField fx:id="heroStats_charyzmaInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_kondycja">
+                     <Label text="Kondycja:"/>
+                     <TextField fx:id="heroStats_kondycjaInput"/>
+                  </HBox>
+
+                  <HBox fx:id="heroStats_slots">
+                     <Label text="Komórki zaklęć:"/>
+                     <TextField fx:id="heroStats_slotsInput"/>
+                  </HBox>
+
+                  </VBox>
+
+               <VBox fx:id="heroItems">
+
+               </VBox>
+               <Button fx:id="modifyBtn" mnemonicParsing="false" alignment="CENTER" text="Zmodyfikuj wartości"/>
+               <Label fx:id="status"/>
+               <Button fx:id="removeHeroBtn" text="Skasuj postać"/>
+            </VBox>
+         </VBox>
+         <VBox fx:id="utilityButtonsWrapper" styleClass="aux-buttons-view">
+            <Label text="Opcje:"/>
+            <VBox fx:id="utilityButtons" styleClass="packed-view">
+            </VBox>
+         </VBox>
+
+         
+      </HBox>
+   </center>
+</BorderPane>

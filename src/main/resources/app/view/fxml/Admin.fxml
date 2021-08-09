@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane prefHeight="587.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.AdminController">
+   <center>
+      <Label text="Panel Admina" BorderPane.alignment="CENTER" />
+      <HBox fx:id="mainpanel" styleClass="general-view">
+         <VBox fx:id="buttons" styleClass = "packed-view, buttons-view">
+         <Button fx:id="showPeople" text="Wyświetl użytkowników" />
+         <Button fx:id="showSessions" text="Wyświetl sesje"/>
+         <Button fx:id="showPlaces" text="Wyświetl miejsca"/>
+         <Button fx:id="showGroups" text="Wyświetl grupy"/>
+         <Button fx:id="newPlace" text="Dodaj nowe miejsce"/>
+         <Button fx:id="newUser" text="Dodaj nowego użytkownika"/>
+         <Button fx:id="newGroup" text="Dodaj nową grupę"/>
+         <Button fx:id="showLogs" text="Przeglądaj logi operacji na hasłach"/>
+         </VBox>
+         <VBox fx:id="statsWrapper" styleClass = "content-view">
+            <Label fx:id="statsDesc"/>
+            <VBox fx:id="stats"  styleClass = "packed-view">
+            </VBox>
+         </VBox>
+         <VBox fx:id="workingPanel" styleClass = "packed-view, aux-buttons-view"/>
+      </HBox>
+   </center>
+</BorderPane>
